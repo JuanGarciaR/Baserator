@@ -3,6 +3,7 @@ App =
     @set_handlers()
 
   set_handlers: () ->
+  	console.log('hola')
 
 $ ->
   App.init()

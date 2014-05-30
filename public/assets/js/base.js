@@ -1,0 +1,1 @@
+var App;App={init:function(){return this.set_handlers()},set_handlers:function(){return console.log("hola")}},$(function(){return App.init()});
