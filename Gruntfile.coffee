@@ -3,6 +3,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-contrib-uglify')
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-develop')
+  grunt.loadNpmTasks('grunt-npm-install')
 
   grunt.initConfig
     
@@ -40,7 +41,7 @@ module.exports = (grunt) ->
         ext: '.js'
 
 
-  grunt.registerTask 'default', ['dev']
+  grunt.registerTask 'default', ['npm-install','dev']
 
   grunt.registerTask 'dev',
     ['develop', 'watch']
