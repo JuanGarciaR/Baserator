@@ -24,6 +24,7 @@ app = express()
 app.set 'view engine', 'coffee'
 app.enable 'trust proxy'
 app.engine 'coffee', require('coffeecup').__express
+app.set 'views', "#{__dirname}/views"
 app.configure 'production', () ->
   app.set 'view cache', true
 app.use partials()
